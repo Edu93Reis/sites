@@ -1,0 +1,121 @@
+/*menu style*/
+.clearfix:before, .clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+	nav.menu_centered {
+		background-color: #336;
+		position: fixed;
+		z-index:9999;
+		top: 0;
+		width: 100%;		
+		height: 35px;
+	}
+	#check{
+		display: none;
+	}
+	label.mobile_main_menu{				
+		display: none;
+	}
+	ul.main_menu{
+		width: 100%;
+
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+				-ms-justify-content:center;
+				-webkit-justify-content:center;
+				justify-content:center;		
+	}
+	li.top_btn {				
+		background-color: #336;
+		color: #ffffff;
+		margin-left: 40px;
+		float: left;
+		text-decoration: none;
+		list-style: none;
+	}
+	a>li.top_btn:link{
+		background-color: #336;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	a>li.top_btn:hover{
+		background-color: #458 !important;
+		padding: 8px;
+		height:25px;
+		color: #ffffff;
+		text-decoration: none;
+		transition-delay: 0.5s;
+	}
+	a>li.top_btn:active{
+		background-color: #39f;
+		color: #ffffdd;
+		text-decoration: none;
+	}
+	a>li.top_btn:visited{
+		background-color: #336;
+		color: #ffffff;
+		text-decoration: none;	
+	}
+
+	@media (max-width: 320px){
+		#check{
+		  display: none;
+		}
+		#check:checked ~ ul.main_menu{			
+			transform: translateY(300px);
+		}
+		#check:checked ~ ul.main_menu li.top_btn{			
+			transition-delay: 0.5s;
+			opacity: 1;			
+		}
+		label.mobile_main_menu{	
+		  display: block;	
+		  cursor: pointer;					  
+		  padding-left: 3px;					
+		  height:35px;
+		  width: 10%;		  
+		  position: absolute;
+		  z-index: 999;		  
+		}	
+		label.mobile_main_menu:hover{	
+		  background-color: #114;
+		}			
+		ul.main_menu{
+			width: 41%;					
+			height: 175px;			
+			position: absolute;
+			z-index: 1;	
+			display: inline-block;	
+			background: #336;					
+			font-size: 14px;
+			top:-300px;									
+			transition: all 0.5s linear;
+		}		
+		li.top_btn{			
+			float: left;						
+			min-width: 45%;
+			padding: 5px;			
+			background: #336;			
+			color: #fff;			
+			margin-top: 2px;
+			opacity: 0;
+		}		
+		li.top_btn:hover{
+			float: left;						
+			min-width: 45%;
+			padding: 5px;			
+			background: #333;			
+			color: #fff;
+			transition: all 0.5s linear;
+		}		
+		button.mobile_main-menu:hover li.top_btn{
+			display: block;
+			font-size: 12px;
+		}
+	}

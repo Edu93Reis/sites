@@ -1,0 +1,307 @@
+html, body, nav, ul, em, li, content, div, aside, img, a, figure, hr, span, img, content, footer, form, small{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;
+	}
+	body {
+		font-family: Verdana, Geneva, Sans-serif;
+		font-size: 1.4em;
+	}
+	#container{
+		width: 100%;
+		margin:auto;		
+	}
+	/*Começa Menu*/
+	nav.menu_centered {
+		background-color: #336;
+		position: fixed;
+		z-index:9999;
+		top: 0;
+		width: 100%;
+		height: 35px;
+	}
+	ul.main_menu{
+		width: 99%;
+
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+				-ms-justify-content:center;
+				-webkit-justify-content:center;
+				justify-content:center;		
+	}
+	li.top_btn {
+		background-color: #336;
+		color: #ffffff;
+		margin-left: 40px;
+		float: left;
+		text-decoration: none;
+		list-style: none;
+	}
+	li.top_btn a:link{
+		background-color: #336;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	li.top_btn a:hover{
+		background-color: #458 !important;
+		padding: 8px;
+		height:25px;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	li.top_btn a:active{
+		background-color: #39f;
+		color: #ffffdd;
+		text-decoration: none;
+	}
+	li.top_btn a:visited{
+		background-color: #336;
+		color: #ffffff;
+		text-decoration: none;	
+	}
+	/*Termina Menu*/
+	/*Começa conteúdo principal*/
+	content.about{
+		width: 100%;
+		background-color: #ffffff;
+	}
+	div.wrapper_about{
+		width:80%;
+		margin: 30px auto;
+
+		/*centralizando elemento*/
+
+		/*habilita o flex nos filhos em todos os navs*/	
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+			/*centraliza os elementos - horizontal*/
+
+			-ms-justify-content: center;
+			-webkit-justify-content: center;
+			justify-content: center;	
+
+				/*centraliza os elementos - vertical*/
+				-ms-align-items: center;
+				-webkit-align-items: center;
+				align-items: center;		
+	}
+	div.logo{
+		margin-bottom: 15px;
+		width: 100%;
+		float: left;
+		
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+				-ms-justify-content:center;
+				-webkit-justify-content:center;
+				justify-content:center;
+	}
+	small.extra_info{
+		text-align:left;
+		font-size:0.8em;
+		font-style:italic;
+		color:#333;
+		background-color:#fff;
+		padding-top:15px;
+	}
+	aside.photo_me{
+		float: left;
+		width: 130px;
+		height: 130px;
+		border-radius: 600px;
+		margin-right: 25px;
+		overflow: hidden;
+		position: relative;
+		display: block;
+		z-index: 1;
+	}
+	aside.photo_me img {
+		position: absolute;
+		top: -5%;
+		left: -30%;
+		z-index: 9998;
+	}
+	article.main_about h2{
+		text-align: center;
+		font-style: italic;
+		font-weight: 500;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif 1.5em;
+		padding: 15px;
+
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+				-ms-justify-content: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+	}
+	article.main_about{
+		font-size:0.7em;
+		font-weight: 100;
+		margin-top: 45px;
+		margin-bottom: 25px;
+		max-width: 76%;
+		width: 800px;
+	}
+	/*Termina conteúdo principal*/
+	/*Começa Slider*/
+	figure.slider{
+		width: 100%;
+		overflow: 450px;
+	}
+	div.slider{
+		position:absolute;
+		z-index:5;
+		width:100%;
+		background-color: #663300;
+		opacity:0.7;
+		-moz-opacity:0.7;
+		-webkit-opacity:0.7;
+	}
+	div.slider img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			justify-content: center;
+	}
+	div.line{
+		height: 3px;
+		width: 100%;
+		background-color: #eecc33;
+	}
+	/*Termina Slider*/
+	/*Começa produtos*/
+	article.prod{
+		height: 960px;
+		color:white;
+		font-weight:medium;
+		font-size:0.9em;
+		width:100%;
+	}
+	h2.title_style{
+		margin: 50px;
+		margin-bottom: 0px;
+    	color: #444444;
+    	font-weight: medium;
+	    	display: -webkit-flex;
+	    	display: -moz-flex;
+	    	display: flex;
+			    -webkit-justify-content: center;
+			    -moz-justify-content: center;
+			    justify-content: center;
+	}
+	article.prod h4{
+		margin: 30px;
+		color: #444444;
+    	font-weight: lighter;
+    	display: flex;
+    	display: -webkit-flex;
+    	display: -moz-flex;
+    		justify-content: center;
+    		-moz-justify-content: center;
+    		-webkit-justify-content: center;
+	}
+	span.buy_btn{
+		padding: 5px 25px 5px 25px;	
+		margin-top: 250px;	
+		margin-left: 65px;
+		float: left;
+		background: #fff;
+		border-radius: 7px;
+		border: 1px solid #399;
+	}
+	a span.buy_btn{
+		font-weight: medium;
+		color: #399;
+		text-decoration: none;
+	}
+	a span.buy_btn:visited{
+		font-weight: medium;
+		color: #399;
+		text-decoration: none;
+	}
+	a span.buy_btn:hover{
+		font-weight: medium;
+		color: #fff;
+		background: #399;
+		text-decoration: none;
+	}
+	div.description{
+		background-color:#399;
+		height:250px;
+		width:80%;
+		float:left;
+	}
+	#plano_basico, #plano_intermediario, #plano_avancado{
+		margin-bottom:30px;
+	}
+	h3.planos{
+		color: #fff;
+		font-weight: medium;
+		padding: 0px 0px 25px 0px;
+	}
+	aside.description_img{
+		width:33%;
+		height:250px;
+		/*margin-right:25px;*/
+		float:left;
+		overflow:hidden;
+	}
+	content.description_text{
+		margin: 20px 0px 20px 40px;
+		width:60%;
+		float:left;
+	}
+	/*Termina produtos*/
+	/*Começa portfolio*/
+	nav.work_block{
+		width:100%;
+		height: 300px;
+		background-color: #eecc33;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			justify-content: center;
+
+	}
+	div.work_block-wrapper{
+		width:100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			justify-content: center;
+	}
+	ul.first_block li, ul.second_block li{
+		list-style: none;
+		display: inline-block;
+		width: 330px;
+		height: 150px;
+		float: left;
+		margin: 2px 3px 3px 3px;
+		overflow: hidden;
+		background-color: rgba(051,000,000,0.6);
+	}
+	ul.first_block li a img, ul.second_block li a img{
+		opacity: 0.7;
+	}
+	/*Termina protfolio*/

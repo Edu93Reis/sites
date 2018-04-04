@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>Edu Reis - Multimídia</title>
+    <link>http://www.edureis.com.br</link>
+    <description />
+    <item>
+      <guid>http://www.edureis.com.br/</guid>
+      <title>Edu Reis - Multimídia</title>
+      <link>http://www.edureis.com.br/</link>
+      <description>Desenvolvimento de websites para pequenos e micro empresários e assessoria de marketing digital.</description>
+    </item>
+    <item>
+      <guid>http://www.edureis.com.br/marketing.php</guid>
+      <title>Edu Reis - Marketing Digital</title>
+      <link>http://www.edureis.com.br/marketing.php</link>
+      <description>Assessoria de marketing digital com ampla pesquisa de mercado e concorrência.</description>
+    </item>
+    <item>
+      <guid>http://www.edureis.com.br/index.php</guid>
+      <title>Edu Reis - Multimídia</title>
+      <link>http://www.edureis.com.br/index.php</link>
+      <description>Desenvolvimento de websites para pequenos e micro empresários e assessoria de marketing digital.</description>
+    </item>
+    <item>
+      <guid>http://www.edureis.com.br/webdesign.php</guid>
+      <title>Edu Reis - Soluções Web</title>
+      <link>http://www.edureis.com.br/webdesign.php</link>
+      <description>Pacotes de desenvolvimento de websites para pequenos e micro empresários</description>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="59a8fb16-c0cb-4178-b4da-32a1cd723b25" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

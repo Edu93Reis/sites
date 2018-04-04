@@ -1,0 +1,554 @@
+*, div, aside, figure, a, button {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+body{
+	font-family: Verdana, Geneva, Sans-serif;
+	margin: 0 auto;
+}
+a{
+	font-weight: medium;
+	text-decoration: none;
+}
+a,
+.galleryThumbnails img {
+	transition: all 150ms linear;
+	-webkit-transition: all 150ms linear;
+	-moz-transition: all 150ms linear;
+}
+
+div.gallery{
+	overflow: hidden; /*o que faz?*/
+}
+
+/*div.modal{*/
+#mybtn{
+	/*position: absolute;
+	display: none;
+	z-index: 99;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width:100%;
+	overflow: auto;
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	background: #333;
+	background-color: rgba(0,0,0,0.8);
+	/*tutorial from here*/
+		position: fixed;
+		display: none;
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-webkit-opacity:0.7;
+		z-index: 9999;
+	/*tutorial ends here*/
+}
+#mybtn1{
+	/*position: absolute;
+	display: none;
+	z-index: 99;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width:100%;
+	overflow: auto;
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	background: #333;
+	background-color: rgba(0,0,0,0.8);
+	/*tutorial from here*/
+		position: fixed;
+		display: none;
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-webkit-opacity:0.7;
+		z-index: 9999;
+	/*tutorial ends here*/
+}
+#mybtn2{
+	/*position: absolute;
+	display: none;
+	z-index: 99;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width:100%;
+	overflow: auto;
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	background: #333;
+	background-color: rgba(0,0,0,0.8);
+	/*tutorial from here*/
+		position: fixed;
+		display: none;
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-webkit-opacity:0.7;
+		z-index: 9999;
+	/*tutorial ends here*/
+}
+#mybtn3{
+	/*position: absolute;
+	display: none;
+	z-index: 99;*/
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width:100%;
+	overflow: auto;
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	background: #333;
+	background-color: rgba(0,0,0,0.8);
+	/*tutorial from here*/
+		position: fixed;
+		display: none;
+		opacity: 0.7;
+		-moz-opacity: 0.7;
+		-webkit-opacity:0.7;
+		z-index: 9999;
+	/*tutorial ends here*/
+}
+h1#gallery-title{
+	font-size: 18px;
+	text-align: left;
+	line-height: 1.2;
+	color: #399;
+}
+h2#gallery-subtitle{
+	font-size: 10px; /*nao altera tamanho*/
+	text-align: left;
+	color: #333;
+}
+article#gallery-article{
+	font-size: 10px; /*nao altera tamanho*/
+	text-align: left;
+	color: #333;
+}	
+}
+p{
+	font-size: 14px;
+}
+/*div.gallery{
+	position: absolute;
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 3%;
+	left:50%;
+	z-index:2;
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+}*/
+#dlgbox{
+		/*position: absolute;*/
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 2%;
+	left:50%; /*left 0 centraliza firefox e quebra chrome*/
+	/*z-index:2;*/
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	/*tutorial from here*/
+		position: fixed;
+		z-index: 9999;
+		display: none;
+	/*tutorial ends here*/
+}
+#dlgbox1{
+		/*position: absolute;*/
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 2%;
+	left:50%; /*left 0 centraliza firefox e quebra chrome*/
+	/*z-index:2;*/
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	/*tutorial from here*/
+		position: fixed;
+		z-index: 9999;
+		display: none;
+	/*tutorial ends here*/
+}
+
+#dlgbox2{
+		/*position: absolute;*/
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 2%;
+	left:50%; /*left 0 centraliza firefox e quebra chrome*/
+	/*z-index:2;*/
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	/*tutorial from here*/
+		position: fixed;
+		z-index: 9999;
+		display: none;
+	/*tutorial ends here*/
+}
+
+#dlgbox3{
+	position: absolute;
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 2%;
+	left:50%; /*left 0 centraliza firefox e quebra chrome*/
+	/*z-index:2;*/
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	/*tutorial from here*/
+		position: fixed;
+		z-index: 9999;
+		display: none;
+	/*tutorial ends here*/
+}
+
+#dlgbox4{
+		/*position: absolute;*/
+	height: auto;
+	width: 740px;
+	max-height:645px;
+	min-height:420px;
+	max-width:73%;
+	top: 2%;
+	left:50%; /*left 0 centraliza firefox e quebra chrome*/
+	/*z-index:2;*/
+	background-color: #fff;
+	border: 1px;
+	border-color: #302d2d;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: transform(-50%, 0);
+		-webkit-transition: all 0.5s 0.5s ease-in-out;
+		transition: all 0.5s 0.5s ease-in-out;
+	/*tutorial from here*/
+		position: fixed;
+		z-index: 9999;
+		display: none;
+	/*tutorial ends here*/
+}
+
+
+/* center alignment to Firefox */
+body:not(:-moz-handler-blocked)
+{ 
+    div.gallery, x:-moz-any-link {
+        left:25%;
+        top:3%;
+	}
+}
+
+@-moz-document url-prefix() { 
+    div.gallery, x:-moz-any-link {
+        left:25%;
+        top:3%;
+	}
+}
+/*********************/
+
+aside.gallery-lateral{
+	height:420px;
+	width:23%;
+	padding-right:15px;
+	padding-left:15px;
+	float:left;
+}
+hgroup{
+	margin: 0px;
+	display: inline-block;
+}
+p.description{
+	margin: 5px 0px 5px 0px;
+}
+figure.album{
+	width:65%;
+	float:left;
+}
+div#big-image-container{
+	position:relative;
+	background: #302d2d;
+	border-radius: 10px;
+	width: 520px;
+			
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+
+				-ms-justify-content:center;
+				-webkit-justify-content:center;
+				justify-content:center;		
+}
+div.big-image{
+	width: 480px;
+	height: 500px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+
+  	display: -ms-flex;
+  	display: -webkit-flex;
+  	display: flex;
+
+  
+        -ms-align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+div.big-image img{
+	display: none;
+	width: 480px;
+	height: auto; 
+	margin: auto;
+}
+img.previewImage1 {
+	display: block;
+}
+div.big-image img.previewImage1{
+	display: block;
+}
+.galleryPreviewArrows a{
+	width: 18px;
+	height: 18px;
+	display: block;
+	color: #333;
+	font-weight: medium;
+	text-align: center;
+	line-height: 20px;
+	background: rgba(255,255,255,0.4);
+	border: 1px;
+	border-radius: 40px;
+	text-decoration: none;
+	position: absolute;
+	z-index: 99;
+    left: 10px;
+	top: 50%;
+}
+a.nextSlideArrow {
+	right: 10px;
+	left: auto;
+}
+div#thumb-container{
+	margin-top:15px;
+	width:520px;
+	height:75px;
+	overflow-x: auto;
+	
+}
+ul.small-img{
+	position: relative;
+	width:520px;
+	display: -webkit-flex;
+  	display: flex;
+     -webkit-align-items: center;
+     align-items: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+}
+li.img-holder{
+	overflow: hidden;
+}
+li#thumb_1{
+	background: #302d2d;
+	width:115px;
+	height:70px;
+	margin-left:7.5px;
+	margin-right:7.5px;
+	float: left;
+}
+li#thumb_2{
+	background: #302d2d;
+	width:115px;
+	height:70px;
+	margin-left:7.5px;
+	margin-right:7.5px;
+	float: left;
+}
+li#thumb_3{
+	background: #302d2d;
+	width:115px;
+	height:70px;
+	margin-left:7.5px;
+	margin-right:7.5px;
+	float: left;
+}
+li#thumb_4{
+	background: #302d2d;
+	width:115px;
+	height:70px;
+	margin-left:7.5px;
+	margin-right:7.5px;
+	float: left;
+}
+li#thumb_1 img{
+	display: block;
+	opacity: 0.7;
+	filter: alpha(opacity:0.7);
+}
+li#thumb_2 img{
+	display: block;
+	opacity: 0.7;
+	filter: alpha(opacity:0.7);
+}
+li#thumb_3 img{
+	display: block;
+	opacity: 0.7;
+	filter: alpha(opacity:0.7);
+}
+li#thumb_4 img{
+	display: block;
+	opacity: 0.7;
+	filter: alpha(opacity:0.7);
+}
+.galleryThumbnailsContainer{
+overflow-x: auto;
+}
+.thumbnailsImage img{
+display: none;
+position: relative;
+top: 0;
+}	
+.thumbnailsImage a.active img {
+	border: 2px solid #399;
+}
+a, .small-img img { /* .small-img refere a ul, no meu caso pode ser que o correto seja usar a class da div acima da ul */
+	transition: all 150ms linear;
+	-webkit-transition: all 150ms linear;
+	-moz-transition: all 150ms linear;
+}
+#close{
+	display: none;
+	border: hidden !important;
+}
+#close2{
+	display: none;
+	border: hidden !important;
+}
+#close3{
+	display: none;
+	border: hidden !important;
+}
+#close4{
+	display: none;
+	border: hidden !important;
+}
+.modal-close {
+  position: fixed;
+  z-index:9999;
+  text-decoration: none;
+  top: 5px;
+  right: 1%;
+  padding: 0px;
+  float:left;
+}
+ 
+.modal-close:after {
+  content: "X";
+  float: right;
+  /*margin: 5px 5px 0 0;*/
+  width: 18px;
+  height: 18px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 230px;
+  border: 0;
+  box-shadow: 0 0 3px #000;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
